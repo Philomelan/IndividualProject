@@ -6,37 +6,36 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/background">
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
         android:layout_margin="20dp"
+        android:background="@color/background"
         android:gravity="center"
-        android:background="@color/background">
+        android:orientation="vertical">
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnGame"
+            style="@style/ButtonWithIcon"
             android:layout_marginBottom="20dp"
-            app:iconSize="26dp"
-            app:icon="@drawable/ic_game"
             android:text="Начать игру"
-            style="@style/ButtonWithIcon" />
+            app:icon="@drawable/ic_game"
+            app:iconSize="26dp" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnHistory"
+            style="@style/ButtonWithIcon"
             android:layout_marginBottom="20dp"
-            app:iconSize="22dp"
-            app:icon="@drawable/ic_history"
             android:text="История"
-            style="@style/ButtonWithIcon" />
+            app:icon="@drawable/ic_history"
+            app:iconSize="22dp" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnSettings"
+            style="@style/ButtonWithIcon"
             android:layout_marginBottom="20dp"
-            app:icon="@drawable/ic_settings"
             android:text="Настройки"
-            style="@style/ButtonWithIcon" />
+            app:icon="@drawable/ic_settings" />
 
     </LinearLayout>
 </LinearLayout>
