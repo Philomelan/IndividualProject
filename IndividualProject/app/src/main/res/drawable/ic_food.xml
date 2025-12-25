@@ -1,0 +1,25 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp" android:height="24dp"
+    android:viewportWidth="24" android:viewportHeight="24">
+
+    <!-- Контур банки -->
+    <path android:fillColor="#00000000"
+        android:strokeColor="#000000" android:strokeWidth="1.2"
+        android:pathData="M6,4.5h12v15h-12z"/>
+
+    <!-- Основа банки -->
+    <path android:fillColor="#FF8B4513"
+        android:pathData="M6,5.7h12v12.6h-12z"/>
+
+    <!-- Верхний ободок -->
+    <path android:fillColor="#FFD3D3D3"
+        android:pathData="M6,4.5h12v1.2h-12z"/>
+
+    <!-- Нижний ободок -->
+    <path android:fillColor="#FFD3D3D3"
+        android:pathData="M6,18.3h12v1.2h-12z"/>
+
+    <!-- Этикетка -->
+    <path android:fillColor="#FFDC143C"
+        android:pathData="M7.5,7.5h9v6h-9z"/>
+</vector>

@@ -1,0 +1,23 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- Череп с чёрным контуром -->
+    <path
+        android:fillColor="@color/white"
+        android:strokeColor="#000000"
+        android:strokeWidth="0.8"
+        android:pathData="M12,4c-4,0 -7,3 -7,7c0,2 1,4 2,5v2h10v-2c1,-1 2,-3 2,-5c0,-4 -3,-7 -7,-7z"/>
+
+    <!-- Глаза -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="M7.5,9h3v3h-3z M13.5,9h3v3h-3z"/>
+
+    <!-- Нос -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="M12,13l-1,2h2z"/>
+</vector>

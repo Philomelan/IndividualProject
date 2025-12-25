@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/settings"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        android:background="@color/background">
+
+        <!-- Заголовок -->
+        <TextView
+            android:id="@+id/tvHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"
+            android:text="Настройки"
+            android:textColor="@color/text_and_icons"/>
+
+        <!-- Остальной контент по центру экрана  -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tvMusic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Громкость музыки"
+                android:textColor="@color/text_and_icons"
+                android:textSize="18sp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginHorizontal="12dp"/>
+
+            <SeekBar
+                android:id="@+id/sbMusic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:max="100"
+                android:progress="50" />
+
+            <TextView
+                android:id="@+id/tvSound"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Громкость звуков"
+                android:textColor="@color/text_and_icons"
+                android:textSize="18sp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginHorizontal="12dp" />
+
+            <SeekBar
+                android:id="@+id/sbSound"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp"
+                android:max="100"
+                android:progress="50" />
+
+        </LinearLayout>
+
+        <!-- Кнопка "Назад" -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnBack"
+            app:iconSize="26dp"
+            app:icon="@drawable/ic_back"
+            android:text="Назад"
+            android:layout_gravity="center"
+            style="@style/ButtonWithIcon" />
+
+    </LinearLayout>
+</LinearLayout>

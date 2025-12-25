@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "name": "Инженер Кай",
+    "avatarName": "kai"
+  },
+  {
+    "id": 2,
+    "name": "Сестра Беатрис",
+    "avatarName": "beatrice"
+  },
+  {
+    "id": 3,
+    "name": "Старейшина Корвин",
+    "avatarName": "korvin"
+  },
+  {
+    "id": 4,
+    "name": "Глава охраны Рорк",
+    "avatarName": "rork"
+  },
+  {
+    "id": 5,
+    "name": "Химик Векс",
+    "avatarName": "veks"
+  },
+  {
+    "id": 6,
+    "name": "Переводчица Лира",
+    "avatarName": "lira"
+  },
+  {
+    "id": 7,
+    "name": "Гибрид Зора",
+    "avatarName": "zora"
+  }
+]

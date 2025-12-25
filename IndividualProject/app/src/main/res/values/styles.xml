@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ButtonWithIcon" parent="Widget.MaterialComponents.Button">
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingHorizontal">20dp</item>
+        <item name="iconSize">20dp</item>
+        <item name="iconPadding">0dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="cornerRadius">20dp</item>
+        <item name="backgroundTint">@color/button_background</item>
+        <item name="android:textColor">@color/text_and_icons</item>
+    </style>
+</resources>

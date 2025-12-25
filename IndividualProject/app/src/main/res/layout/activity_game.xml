@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/game"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        android:background="@color/background">
+
+        <!-- Год и кнопки -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <!-- Кнопка для выхода в меню -->
+            <ImageButton
+                android:id="@+id/btnMainMenu"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="10dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_back"
+                android:scaleType="centerCrop"/>
+
+            <!-- Год -->
+            <TextView
+                android:id="@+id/tvYear"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:text="Год: 1"
+                android:textColor="@color/text_and_icons"/>
+
+            <!-- Кнопка для перехода в настройки -->
+            <ImageButton
+                android:id="@+id/btnSettings"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_settings"
+                android:scaleType="centerCrop"/>
+
+        </LinearLayout>
+
+        <!-- Ресурсы -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/tvFood"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:text="50"
+                android:textColor="@color/text_and_icons"
+                android:textAlignment="textStart"
+                android:layout_marginRight="20dp"
+                android:drawablePadding="5dp"
+                app:drawableStartCompat="@drawable/ic_food" />
+
+            <TextView
+                android:id="@+id/tvEnergy"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:text="50"
+                android:textColor="@color/text_and_icons"
+                android:textAlignment="textStart"
+                android:layout_marginRight="20dp"
+                android:drawablePadding="5dp"
+                app:drawableStartCompat="@drawable/ic_energy" />
+
+            <TextView
+                android:id="@+id/tvTech"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:text="50"
+                android:textColor="@color/text_and_icons"
+                android:textAlignment="textStart"
+                android:layout_marginRight="20dp"
+                android:drawablePadding="5dp"
+                app:drawableStartCompat="@drawable/ic_tech" />
+
+            <TextView
+                android:id="@+id/tvArt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:text="50"
+                android:textColor="@color/text_and_icons"
+                android:textAlignment="textStart"
+                android:drawablePadding="5dp"
+                app:drawableStartCompat="@drawable/ic_art" />
+        </LinearLayout>
+
+        <!-- Имя персонажа -->
+        <TextView
+            android:id="@+id/tvCharName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:textSize="24sp"
+
+            android:textStyle="bold"
+            android:textColor="@color/text_and_icons"
+            android:textAlignment="center"
+            android:text="Имя Персонажа" />
+
+        <!-- Карточка и кнопки -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <!-- Левая кнопка -->
+            <ImageButton
+                android:id="@+id/btnLeftArrow"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="10dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_left_arrow"
+                android:scaleType="centerCrop" />
+
+
+            <!-- Карточка -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardContent"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginVertical="10dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="8dp">
+
+                <ImageView
+                    android:id="@+id/ivCharacter"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop" />
+            </androidx.cardview.widget.CardView>
+
+            <!-- Правая кнопка -->
+            <ImageButton
+                android:id="@+id/btnRightArrow"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_right_arrow"
+                android:scaleType="centerCrop" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:padding="20dp"
+            android:text="Вопрос будет здесь"
+            android:textColor="@color/text_and_icons"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+</LinearLayout>

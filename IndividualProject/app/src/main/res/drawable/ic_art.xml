@@ -1,0 +1,30 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp" android:height="24dp"
+    android:viewportWidth="24" android:viewportHeight="24">
+
+    <!-- Левая нота -->
+    <path android:strokeColor="#29316A"
+        android:strokeWidth="2.5"
+        android:pathData="M7,4 L7,17"
+        android:fillColor="#00000000"/>
+    <path
+        android:fillColor="#29316A"
+        android:pathData="M2.25,17 a3,3 0 1,1 6,0 a3,3 0 1,1 -6,0 z"/>
+
+
+    <!-- Правая нота -->
+    <path android:strokeColor="#29316A"
+        android:strokeWidth="2.5"
+        android:pathData="M18,4 L18,17"
+        android:fillColor="#00000000"/>
+    <path
+        android:fillColor="#29316A"
+        android:pathData="M13.25,17 a3,3 0 1,1 6,0 a3,3 0 1,1 -6,0 z"/>
+
+
+    <!-- Объединяющая линия -->
+    <path android:strokeColor="#29316A" android:strokeWidth="2.5"
+        android:pathData="M5.75,4 L19.25,4" android:fillColor="#00000000"/>
+
+
+</vector>
